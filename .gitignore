@@ -1,0 +1,32 @@
+# Local-only records and personal historical material
+_local/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+tmp/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+# Keep dependency lock files in version control when introduced.
+# Apple
+DerivedData/
+.build/
+Pods/
+xcuserdata/
+*.xcuserstate
+# JavaScript / React Native
+node_modules/
+.expo/
+coverage/
+# Android
+.gradle/
+**/build/
+local.properties
+*.jks
+*.keystore
+# Go build outputs
+bin/
