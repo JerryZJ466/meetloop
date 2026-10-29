@@ -1,6 +1,6 @@
 # MeetLoop 从这里开始
 
-当前主计划：v3.0（2026-10-29）。只按 [当前主计划](plans/plan.md) 的M0-M7推进；旧PDF保留作历史。你的Mac、Xcode和实际语言水平尚未验证，先做M0。
+当前主计划：v3.1（2026-10-29）。只按 [当前主计划](plans/plan.md) 的M0-M5、M7核心推进；M6/MG选修；旧PDF保留作历史。你的Mac、Xcode和实际语言水平尚未验证，先做M0。
 
 ## 今天约3小时
 
@@ -22,7 +22,7 @@
 | 3 | M1内存报名/取消 | 容量、重复点击和取消的断言 |
 | 4 | M1我的报名、四态和第一次小演示 | 单一状态源、独立规则变更；未完成就顺延 |
 
-M0+M1预计55-80h，所以前四周可能只完成M1的大部分，这是正常进度。M2网络/并发与M3 UIKit/Go等当前关卡通过后再开始；RN在M4之后，Kotlin在M6。Today和Stanford不与100 Days整套同时开课。
+M0+M1预计55-80h，所以前四周可能只完成M1的大部分，这是正常进度。M2网络/并发与M3 UIKit与首轮作品等当前关卡通过后再开始；RN在M4之后，Android深化在M6选修，Go在MG选修。Today和Stanford不与100 Days整套同时开课。
 
 ## 开工核对（需要你实际执行）
 
@@ -35,3 +35,5 @@ M0+M1预计55-80h，所以前四周可能只完成M1的大部分，这是正常�
 Mac未到或安装受限不影响阅读和纯Swift练习，但不能据此认定iOS环境已准备好。
 
 资料：[100 Days](https://www.hackingwithswift.com/100/swiftui) · [Swift语言指南](https://docs.swift.org/latest/documentation/the-swift-programming-language/) · [进度账本](PROGRESS.md) · [时间估算](面试准备与时间评估.md)
+
+主次确认：iOS/RN与Agent/AI应用是核心；Android/Go/FDE/平台为附加。最新累计估时见[实习时间](面试准备与时间评估.md)。

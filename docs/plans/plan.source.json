@@ -1,20 +1,20 @@
 {
   "project": "MeetLoop",
-  "version": "3.0",
+  "version": "3.1",
   "snapshot_date": "2026-10-29",
   "status": "PLAN_ONLY_NOT_IMPLEMENTED",
   "pages": [
     {
       "title": "MeetLoop 开发与学习主计划",
-      "subtitle": "v3.0 | 2026-10-29 审核版 | Swift / iOS + React Native 主项",
+      "subtitle": "v3.1 | 2026-10-29 主次修订 | iOS + RN 核心；Android / Go 附加",
       "blocks": [
         {
           "type": "box",
-          "text": "可以开工。方向保留；本版统一阶段与工时，提前 UIKit 和独立编码，补足跨端边界与求职验收。"
+          "text": "核心只围绕 iOS 与 RN 做深。Kotlin / Android 深化和自写 Go 为附加项，不阻塞首轮实习或 RN 主项。"
         },
         {
           "type": "p",
-          "text": "产品保持活动列表 → 详情 → 报名 / 取消 → 我的报名。Swift / iOS 为第一主项，TypeScript / RN 为第二主项，Kotlin / Android 为宿主辅项，Go 为最小可靠服务。项目与 AgentDesk 的代码、数据和部署独立。"
+          "text": "产品保持活动列表 → 详情 → 报名 / 取消 → 我的报名。Swift / iOS 为第一主项，TypeScript / RN 为第二主项。客户端网络、状态、鉴权失败与取消必须亲自验证；服务可先用明确标注的可控假服务 / 参考 API，不以自己完成 Go 为前提。"
         },
         {
           "type": "table",
@@ -47,18 +47,18 @@
         },
         {
           "type": "p",
-          "text": "docs/plans/plan.source.json 为内容源，plan.md、plan.html 与本 PDF 为同版快照。START_HERE 负责起步，PROGRESS 记录证据。旧 v2.2 / v2.3 PDF 只留作历史参考；阶段和工时一律以本版为准。"
+          "text": "plan.source.json 是内容源，Markdown / HTML / 本 PDF 同版。旧 v3.0 和 v2.x 只作历史；本版覆盖其中将 Go / Android 列为主线前置的安排。阶段状态记录在 PROGRESS。"
         }
       ]
     },
     {
-      "title": "阶段总表与面试出口",
-      "subtitle": "工时从现在起累计，不是额外叠加；已掌握部分必须通过实操才可跳过",
+      "title": "核心阶段、选修与实习出口",
+      "subtitle": "iOS 先投，RN随后增强；可跳过选修直接进入核心深化",
       "blocks": [
         {
           "type": "table",
           "head": [
-            "阶段",
+            "必修阶段",
             "本阶段",
             "累计",
             "完成后能做什么"
@@ -68,65 +68,59 @@
               "M0 基线与环境",
               "10-15h",
               "10-15h",
-              "能独立写筛选函数；工程可构建，记录工具链。"
+              "独立筛选函数、可构建工程与工具链记录。"
             ],
             [
               "M1 本地 iOS 小闭环",
               "45-65h",
               "55-80h",
-              "列表、详情、报名、我的报名；状态单一且可测试。"
+              "列表、详情、报名、我的报名；状态和规则可测试。"
             ],
             [
               "M2 iOS 数据与可靠性",
               "65-90h",
               "120-170h",
-              "网络、缓存、取消、并发与内存故障能复现和修复。"
+              "网络、缓存、取消、并发与内存故障定位。"
             ],
             [
-              "M3 UIKit 与最小 Go",
-              "60-90h",
-              "180-260h",
-              "原生专项、服务端正确性与第一份面试作品。"
+              "M3 UIKit 与首轮实习作品",
+              "30-50h",
+              "150-220h",
+              "原生专项、ObjC 阅读、演示和独立变更。"
             ],
             [
               "M4 JS / TS / React",
               "55-80h",
-              "235-340h",
-              "独立写表单与异步状态，区分 DOM 与 RN。"
+              "205-300h",
+              "表单、异步状态与 React 基础。"
             ],
             [
-              "M5 RN 与 iOS 集成",
-              "80-110h",
-              "315-450h",
-              "报名模块嵌入 iOS，契约、原生能力、Release 可验证。"
+              "M5 RN 与原生集成",
+              "95-120h",
+              "300-420h",
+              "iOS 宿主集成、基本 Android RN 构建验证、Release 与回归。"
             ],
             [
-              "M6 Kotlin / Android 宿主",
-              "55-80h",
-              "370-530h",
-              "生命周期与重建正确，同一个 RN 模块在 Android 运行。"
-            ],
-            [
-              "M7 性能、发布与求职",
-              "80-120h",
-              "450-650h",
-              "可复现实验、发布演练、用户反馈与完整技术讲解。"
+              "M7 iOS / RN 工程深化",
+              "60-90h",
+              "360-510h",
+              "性能、发布、用户反馈、故障与测量证据。"
             ]
           ],
           "widths": [
-            0.22,
+            0.24,
             0.12,
             0.14,
-            0.52
+            0.5
           ]
         },
         {
           "type": "p",
-          "text": "M0-M3 合计 180-260h，是开始面试部分 iOS 日常实习的准备区间，不是录用线。M0-M7 合计 450-650h，训练完整移动端 / 跨端工程链路。估时包括补课、实现、测试与正常返工；未做能力基线测试，区间仍有不确定性。"
+          "text": "M0-M3 为 iOS 实习准备 150-220h；M0-M5 必修为 iOS + RN 300-420h；再完成 M7 是核心深化 360-510h。实际过关取决于独立改题、排错和验证，工时不是录用线。"
         },
         {
           "type": "box",
-          "text": "顺序：M0 → M1 → M2 → M3 → M4 → M5 → M6 → M7。测试、日志、可访问性与文档从首次相关实现就开始；M7 是加深，不是首次补质量。"
+          "text": "必修顺序 M0 → M1 → M2 → M3 → M4 → M5 → M7。选修 M6 Android 55-80h、MG Go 35-50h 不阻塞。RN 的基本 Android 构建 / Release 冒烟在 M5，不等于 Android 深度。"
         }
       ]
     },
@@ -216,7 +210,7 @@
         },
         {
           "type": "p",
-          "text": "网络阶段先用可控本地假服务或测试替身，不依赖生产 API。数据层稳定后，再由 M3 的 Go 接口替换。并发安全以当前工具链检查结果和可复现实验验证，不靠强行关闭检查通过编译。"
+          "text": "网络阶段使用可控本地假服务或参考 API，并明确来源；仍验证 HTTP、鉴权失败、超时、取消与重复请求。MG 可选阶段再亲自实现 Go / SQL 服务；客户端网络实操不能因 Go 可选而省略。"
         },
         {
           "type": "h",
@@ -236,8 +230,8 @@
       ]
     },
     {
-      "title": "M3：UIKit、最小 Go 与首轮面试",
-      "subtitle": "60-90h | 不等 RN / Android 完成才申请 iOS 实习",
+      "title": "M3：UIKit 与首轮 iOS 实习",
+      "subtitle": "30-50h | 自写 Go、RN和Android深化均不作为首轮门槛",
       "blocks": [
         {
           "type": "table",
@@ -247,20 +241,20 @@
           ],
           "rows": [
             [
-              "UIKit 约 25-40h",
-              "用 Apple Today 学列表、导航、Auto Layout、控制器生命周期与复用；把 MeetLoop 一个列表或详情做成 UIKit，复用数据层。修复复用错图 / 退出后回调。"
+              "UIKit 专项",
+              "Apple Today 与官方文档：列表、导航、Auto Layout、控制器生命周期、复用；移植一个真实页面，复用自己的数据层。"
             ],
             [
-              "Objective-C 阅读实验",
-              "在 UIKit 工时内留约 6-10h：读一个小型 ObjC 类，从 Swift 调用；解释 ARC 和 bridging。深入 runtime 仅按目标 JD 加练。"
+              "ObjC 阅读 / 互操作",
+              "在本阶段内留6-10h读一个小类并从Swift调用，理解ARC / bridging。深入runtime按真实JD另补。"
             ],
             [
-              "Go 约 35-50h",
-              "单服务 + PostgreSQL；活动、报名和我的报名接口；身份认证、资源授权、输入校验、迁移、唯一约束和事务。选择成熟登录方案，不自造密码算法。"
+              "面试作品整理",
+              "应用运行、UIKit页面、网络与取消、一个内存/并发故障和回归；录3分钟演示，解释字节实习中真正掌握的工作。"
             ],
             [
-              "报名正确性",
-              "并发报名不能超容量；重复请求用幂等键；取消不会错误归还名额；写入后响应丢失时客户端查询事实，不能盲目重试。"
+              "独立验收",
+              "60分钟增加一个报名规则；解释状态、生命周期和服务端响应含义。Mock/参考API明确标注，不把其后端写成自己的成果。"
             ]
           ],
           "widths": [
@@ -270,32 +264,24 @@
         },
         {
           "type": "p",
-          "text": "Go 弱化的是服务规模，不是数据正确性。写 API 契约、结构化日志、数据库备份 / 恢复说明和核心集成测试；不引入微服务、消息队列、Kubernetes。"
+          "text": "HTTP接口、错误语义与客户端行为必须理解；不要求此时先用 Go 自建账号体系、事务和数据库。自写服务放在 MG 附加阶段，避免挤占 UIKit 与 RN。"
         },
         {
-          "type": "h",
-          "text": "M3 面试出口"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "一个可复现运行的 iOS 产品；UIKit 专项；一例内存 / 并发排错；一次跨请求到 SQL 的正确性验证；3 分钟演示。",
-            "60 分钟独立增加报名规则，说明客户端提示与服务端约束各自职责；如后端进度落后，简历只写实际完成范围。"
-          ]
+          "type": "box",
+          "text": "通过后可以申请匹配的 iOS 实习。M4 学 JS/TS/React，M5 做 RN；不等待 Go 或 Kotlin 专项。"
         },
         {
           "type": "refs",
           "ids": [
             "today",
-            "go",
-            "postgres"
+            "swift"
           ]
         }
       ]
     },
     {
       "title": "M4-M5：React 基础到 RN 主项",
-      "subtitle": "M4 55-80h；M5 80-110h | 先独立 RN 页面，再嵌入原生宿主",
+      "subtitle": "M4 55-80h；M5 95-120h | RN实习作品与基本双端验证",
       "blocks": [
         {
           "type": "table",
@@ -327,8 +313,13 @@
             ],
             [
               "M5 原生能力",
-              "实现系统分享一条调用链，学习 Codegen / TurboModule / Fabric / JSI 各自职责。",
-              "追踪 JS → 原生 → API → 回调；构建 Release，在无 Metro 时可启动。"
+              "系统分享与一条原生调用链；理解 Codegen / TurboModule / Fabric / JSI 的职责。",
+              "追踪 JS → 原生 → API → 回调；iOS Release 无 Metro 可启动，回归关键边界。"
+            ],
+            [
+              "M5 Android基本验证",
+              "用最小参考宿主完成同一RN模块的Android构建、返回和Release冒烟；先不做Kotlin完整客户端。",
+              "记录实际设备/模拟器和结果；未验证Android就只写iOS宿主RN经验。"
             ]
           ],
           "widths": [
@@ -353,46 +344,50 @@
       ]
     },
     {
-      "title": "M6：Kotlin 与 Android 辅项",
-      "subtitle": "55-80h | 进入条件：RN 模块和 iOS 宿主契约稳定",
+      "title": "选修 M6 与 MG：按需补足",
+      "subtitle": "Android 55-80h；Go 35-50h | 不阻塞核心投递或进入 M7",
       "blocks": [
         {
           "type": "h",
-          "text": "做一个小而完整的宿主"
+          "text": "M6 Kotlin / Android 深化"
         },
         {
           "type": "bullets",
           "items": [
-            "学习 Kotlin 空安全、数据类、sealed 类型、协程 / Flow；Compose 状态、ViewModel 与 Activity 生命周期。",
-            "原生实现活动列表 / 详情，复用接口契约；接入同一个 RN 报名模块。无需复制全部 iOS 页面。",
-            "处理旋转、进程重建、返回键、重复打开、退出后取消和权限拒绝；状态恢复不得重复触发报名。",
-            "完成 Android Release 安装与运行，记录 JDK / Gradle / AGP 兼容组合；从 JS 错误和原生日志定位跨层问题。"
+            "学习 Kotlin 空安全、数据类、协程 / Flow；Compose、ViewModel、Activity生命周期。",
+            "原生列表 / 详情作为宿主，深入旋转、进程重建、取消和权限拒绝；同一RN模块再次验证。",
+            "目标是解释宿主差异；不要求复制完整iOS产品，也不自动等于Android主岗深度。"
           ]
         },
         {
           "type": "h",
-          "text": "过关后你应能"
+          "text": "MG 自写 Go 服务"
         },
         {
-          "type": "p",
-          "text": "从冷启动到报名回调画出生命周期；解释 Flow 收集何时开始和取消；制造一次宿主重建并验证 UI、网络和业务结果一致。用同一宿主契约解释两端差异。"
+          "type": "bullets",
+          "items": [
+            "单体 Go + PostgreSQL，活动 / 报名 API、认证与资源权限、输入校验、迁移和日志。",
+            "数据库唯一约束、容量事务、幂等键；测试重复请求、并发报名、取消、响应丢失后查询事实。",
+            "选择实现时，正确性仍须验收；不引入微服务、Kafka和Kubernetes。"
+          ]
         },
         {
           "type": "box",
-          "text": "该阶段训练跨端宿主与 Kotlin 工程基础，不等同于资深 Android 深度。若投原生 Android 主岗，应另补 Java、系统组件、平台性能与该 JD 的专项，不能只凭 RN 模块就声称覆盖。"
+          "text": "可以先完成 iOS + RN 的实习作品，再选一个附加项。已有参考 API 或模拟器可用于客户端训练；简历如实区分独立后端与外部依赖。"
         },
         {
           "type": "refs",
           "ids": [
             "android",
-            "rn"
+            "go",
+            "postgres"
           ]
         }
       ]
     },
     {
-      "title": "M7：工程深度与作品验收",
-      "subtitle": "80-120h | 从第一天积累证据，到此集中验证与补齐",
+      "title": "M7：iOS / RN 工程深化",
+      "subtitle": "60-90h | 不等附加的 Android / Go 完成；基础质量从早期积累",
       "blocks": [
         {
           "type": "table",
@@ -460,7 +455,7 @@
             ],
             [
               "RN / 移动跨端",
-              "M4-M6 核心对应，建立在原生基础上。",
+              "M4-M5 核心对应，M6为Android深化选修。",
               "React / TS、原生集成、平台差异、性能和 Release；并非所有团队都用 RN。"
             ],
             [
@@ -486,7 +481,7 @@
         },
         {
           "type": "p",
-          "text": "在 A4 / A7 后另开约 80-140h 专项：响应式与语义布局、浏览器渲染 / 缓存、组件与端到端测试、Web 性能测量、登录与 CSRF / XSS；再按真实 JD 选 SSR / Next.js 或 Node 服务中的一个。主线不预装全家桶，额外工时不藏在 450-650h 里。"
+          "text": "在 A4 / A7 后另开约 80-140h 专项：响应式与语义布局、浏览器渲染 / 缓存、组件与端到端测试、Web 性能测量、登录与 CSRF / XSS；再按真实 JD 选 SSR / Next.js 或 Node 服务中的一个。主线不预装全家桶，额外工时不藏在 核心主线工时 里。"
         },
         {
           "type": "refs",
@@ -498,35 +493,29 @@
       ]
     },
     {
-      "title": "双线时间安排与求职节奏",
-      "subtitle": "总预算每周 21 小时起；课程、调试、测试、文档和面试都算在内",
+      "title": "核心路线的实习时间安排",
+      "subtitle": "从现在累计；每周 21h 并行；不是两个项目分别全职学习",
       "blocks": [
         {
           "type": "table",
           "head": [
-            "时期 / 条件",
-            "MeetLoop",
-            "AgentDesk",
+            "时期",
+            "iOS / RN",
+            "Agent / AI 应用",
             "公共基础"
           ],
           "rows": [
             [
-              "现在至首轮 iOS 面试准备",
+              "首轮 iOS 关卡之前",
               "13h",
               "5h",
               "3h"
             ],
             [
-              "M3 过关后的默认安排",
-              "8h",
-              "10h",
+              "M3 通过后默认均衡推进",
+              "9h",
+              "9h",
               "3h"
-            ],
-            [
-              "实习 / 考试导致时间减少",
-              "按真实余量保留一个主项",
-              "维持小步或暂停新功能",
-              "保留每周复盘"
             ]
           ],
           "widths": [
@@ -537,28 +526,51 @@
           ]
         },
         {
-          "type": "p",
-          "text": "从 2026 年 11 月到 2027 年 2 月底约 17 周：约 221h 给 MeetLoop、85h 给 AgentDesk、51h 给公共基础。对应目标是 M3 的中低区间和 A1 完成；不是四个月内做完双项目。若起点不足或春节暂停，按关卡顺延。"
-        },
-        {
-          "type": "p",
-          "text": "两条主线各为 450-650h，合计 900-1300h；每周项目时间 18h，粗算约 50-73 个有效周。按 M3 过关即从 13/5 切到 8/10、完成一项后暂不重分配工时估算，约 52-75 周；再加 10%-20% 中断余量，约 14-21 个日历月。18 个月可争取中档完成，高档或大幅中断会更久。"
-        },
-        {
-          "type": "h",
-          "text": "投递不等全部完工"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "2026 年 12 月整理实习复盘与简历，开始关注官方岗位；M2 后可试投并记录面试缺口，M3 作为首轮目标。",
-            "春季 2027 上海优先、4-5 天 / 周、连续至少 3 个月；毕业时间、在读身份和具体到岗日期逐项核对，不因作品完成就默认有资格。",
-            "美国岗位按届别及在读要求提前查看；具体实习或工作资格以学校与雇主确认为准。本次不推断个人资格。"
+          "type": "table",
+          "head": [
+            "投递检查点",
+            "累计项目工时",
+            "含日历中断的估计"
+          ],
+          "rows": [
+            [
+              "iOS 实习：M0-M3",
+              "150-220h",
+              "约 3-5 个月"
+            ],
+            [
+              "iOS + RN：M0-M5 必修",
+              "300-420h",
+              "约 7-11 个月"
+            ],
+            [
+              "AI 应用 / 只读 Agent：A0-A4",
+              "205-295h",
+              "约 7-12 个月"
+            ],
+            [
+              "带受控操作 Agent：A0-A5",
+              "260-375h",
+              "约 9-14 个月"
+            ]
+          ],
+          "widths": [
+            0.47,
+            0.22,
+            0.31
           ]
         },
         {
+          "type": "p",
+          "text": "估算基于当前基础尚需补独立编码，每阶段含课程、调试、测试与正常返工；日历额外考虑 10%-20% 中断。各档是从现在累计，不能相加。2026-10-29 起步的首轮 iOS 窗口约为 2027 年 1 月底至 3 月；其余按实际小时顺延。"
+        },
+        {
+          "type": "p",
+          "text": "核心扎实路线：MeetLoop 360-510h，AgentDesk 425-610h；合计 785-1120h。以上述分配且暂不重分配已完成项目工时估算，约 53-76 个有效周，含中断约 14-21 个月。实习投递早于完整深化完成。"
+        },
+        {
           "type": "box",
-          "text": "月度只调整工时与下一关。不要因岗位热词每周更换技术栈；岗位复核在 M3、A5 和正式投递前进行。"
+          "text": "Android / Go、FDE / 模型平台均不阻塞核心投递。可读 JD 是能力样本，不能保证未来 HC；城市、学生身份、毕业窗口与实习时长逐项核对。"
         }
       ]
     },
@@ -647,8 +659,8 @@
             ],
             [
               "M3",
-              "Apple Today + UIKit 文档；Go Tour + PostgreSQL 教程。",
-              "移植一个真实页面；写报名事务并发测试。Today 入口需浏览器 JS，本次未完整验课。"
+              "Apple Today + UIKit 文档；少量 ObjC 阅读。",
+              "移植页面、验证生命周期与复用；Go / PostgreSQL 在 MG 选修。"
             ],
             [
               "M4-M5",
@@ -656,8 +668,8 @@
               "先表单和异步，再 RN 页面，再宿主集成；不抄旧构建配置。"
             ],
             [
-              "M6-M7",
-              "Android Basics with Compose 与实际问题对应官方资料。",
+              "M7 / 选修",
+              "iOS / RN性能与发布资料；Android / Go只在选修时用。",
               "重建、取消、性能和发布实验；记录实际工具链与来源版本。"
             ]
           ],
@@ -710,6 +722,163 @@
         {
           "type": "box",
           "text": "开工准备已足够。应用实现、环境验收、真实评测与独立掌握仍未完成；本次审核只是让学习顺序和通过标准更可靠，并不保证录用。"
+        }
+      ]
+    },
+    {
+      "title": "实习目标：国内八家公司",
+      "subtitle": "2026-10-29样本；岗位类型建议不等于未来保证有空缺",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "公司",
+            "优先关注",
+            "实际核验与限制"
+          ],
+          "rows": [
+            [
+              "腾讯",
+              "iOS / 移动跨端；AI应用",
+              "本部上海具体JD未核实；TME有移动实习索引，深圳/北京/广州，不能代表本部上海。"
+            ],
+            [
+              "阿里",
+              "客户端 / 跨端；AI应用研发",
+              "日常实习入口可确认；具体目标JD待复核；查到的Agent算法岗要求训练/RL，不是本主线。"
+            ],
+            [
+              "百度",
+              "iOS；匹配语言栈的AI后端",
+              "北京移动JD正文可读；上海模型平台属附加；AI开放平台另要求Java/Spring。"
+            ],
+            [
+              "字节",
+              "iOS / 客户端；Agent应用后端",
+              "有官方实习标题，国内详情城市/届别/时长未核实；此处仅列可选方向。"
+            ],
+            [
+              "小红书",
+              "iOS / 社区客户端",
+              "上海/北京18417官方索引：27年及后毕业，4-5天/周，至少4个月。"
+            ],
+            [
+              "B站",
+              "iOS / 移动客户端",
+              "有客户端线索，官方正文和开放状态未核实；不可把偏Android线索当RN岗位。"
+            ],
+            [
+              "携程",
+              "iOS / 移动跨端；AI应用",
+              "官方入口可达，当前具体技术实习未核实；历史RN技术不证明当前有岗。"
+            ],
+            [
+              "美团",
+              "移动端 / 点评；AI应用研发",
+              "Agent评测索引在北京且偏评测；上海历史前端岗已不可投，开发岗需复核。"
+            ]
+          ],
+          "widths": [
+            0.12,
+            0.3,
+            0.58
+          ]
+        },
+        {
+          "type": "p",
+          "text": "上海优先、4-5天/周、原先约3个月：首先核对时长与在读身份；小红书的4个月要求是实际差距。实习项目与正式校招不能混用；Agent应用、算法研究和人工评测要按职责区分。"
+        },
+        {
+          "type": "box",
+          "text": "完整JD链接、证据级别和筛选关键词：仓库 docs/INTERNSHIP_TARGETS.md。当前正文 / 索引仅作准备证据，正式投递前重新核对。"
+        },
+        {
+          "type": "refs",
+          "ids": [
+            "job_tencent",
+            "job_ali",
+            "job_baidu_ios",
+            "job_byte",
+            "job_xhs",
+            "job_bili",
+            "job_ctrip",
+            "job_meituan"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "实习目标：美国移动与 AI 应用",
+      "subtitle": "多数样本是2027暑期；不代表2028岗位已开放",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "公司 / 类型",
+            "项目对应",
+            "资格和证据边界"
+          ],
+          "rows": [
+            [
+              "Apple / 硕士软件实习",
+              "MeetLoop原生iOS",
+              "官方索引，MS在读；人才池，不是确定团队空缺。"
+            ],
+            [
+              "Circleback / SWE Intern",
+              "RN、React、API到UI",
+              "SF现场，2027暑期；官方索引；RN藏在职责里。"
+            ],
+            [
+              "Amazon / SDE Intern USA",
+              "两个项目+通用CS",
+              "官方正文；12周，2027.10-2029.09毕业且结束后返校；不保证移动分组。"
+            ],
+            [
+              "Sierra / Agent Intern",
+              "AgentDesk应用工程",
+              "SF/NY，官方索引；2027.12-2028.06毕业，相关本科/MS在读。"
+            ],
+            [
+              "Netic / Agent Platform Intern",
+              "harness / sandbox / eval / 恢复",
+              "SF，官方索引，12周；这里主要是Agent运行工程，不是GPU平台。"
+            ],
+            [
+              "HP IQ / SWE Intern",
+              "Agent工具、评估、研发效能",
+              "SF，官方正文，明确不要求深ML；2027暑期。"
+            ],
+            [
+              "TikTok / Mobile或AI后端",
+              "移动工程或Agent应用",
+              "San Jose，官方正文，2027暑期12周；作为可选项。"
+            ]
+          ],
+          "widths": [
+            0.28,
+            0.31,
+            0.41
+          ]
+        },
+        {
+          "type": "p",
+          "text": "若2027秋才赴美，按实际入学与毕业时间准备之后的实习窗口；工作授权、返校和雇主政策逐项核对。未注明sponsorship不能理解为承诺。FDE仅留附加观察，不扩大核心计划。"
+        },
+        {
+          "type": "box",
+          "text": "移动简历突出iOS实习+MeetLoop；AI应用简历突出AgentDesk的工具、状态、权限与评测。两个项目均需自己能改、能讲、能排错，不能仅展示生成代码。"
+        },
+        {
+          "type": "refs",
+          "ids": [
+            "job_apple",
+            "job_circleback",
+            "job_amazon",
+            "job_sierra",
+            "job_netic",
+            "job_hpiq"
+          ]
         }
       ]
     }
@@ -858,6 +1027,62 @@
     "missing": [
       "MIT Missing Semester",
       "https://missing.csail.mit.edu/"
+    ],
+    "job_tencent": [
+      "腾讯本部实习入口",
+      "https://join.qq.com/"
+    ],
+    "job_ali": [
+      "阿里校园 / 日常实习",
+      "https://campus-talent.alibaba.com/"
+    ],
+    "job_baidu_ios": [
+      "百度移动实习J104728",
+      "https://talent.baidu.com/jobs/detail/INTERN/d4993c3c-f5a4-4a06-92d0-766f53fb832b"
+    ],
+    "job_byte": [
+      "字节校园入口",
+      "https://jobs.bytedance.com/campus/"
+    ],
+    "job_xhs": [
+      "小红书18417",
+      "https://job.xiaohongshu.com/campus/position/18417"
+    ],
+    "job_bili": [
+      "B站招聘入口",
+      "https://jobs.bilibili.com/"
+    ],
+    "job_ctrip": [
+      "携程招聘入口",
+      "https://careers.ctrip.com/"
+    ],
+    "job_meituan": [
+      "美团校园入口",
+      "https://zhaopin.meituan.com/web/campus"
+    ],
+    "job_apple": [
+      "Apple硕士实习人才池",
+      "https://jobs.apple.com/en-us/details/200664320-3810/software-engineering-masters-internships?team=STDNT"
+    ],
+    "job_circleback": [
+      "Circleback RN相关实习",
+      "https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f"
+    ],
+    "job_amazon": [
+      "Amazon USA SDE实习",
+      "https://www.amazon.jobs/en/jobs/10552937/software-development-engineer-intern-summer-2027-usa"
+    ],
+    "job_sierra": [
+      "Sierra Agent实习",
+      "https://jobs.ashbyhq.com/sierra/34b31b67-268c-4270-b48f-72e59064c96e"
+    ],
+    "job_netic": [
+      "Netic Agent工程实习",
+      "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7/?embed=true"
+    ],
+    "job_hpiq": [
+      "HP IQ AI应用实习",
+      "https://job-boards.greenhouse.io/hpiq/jobs/6114890004"
     ]
   },
   "phases": [
@@ -866,56 +1091,65 @@
       "name": "基线与环境",
       "hours_min": 10,
       "hours_max": 15,
-      "outcome": "能独立写筛选函数；工程可构建，记录工具链。"
+      "outcome": "独立筛选函数、可构建工程与工具链记录。"
     },
     {
       "id": "M1",
       "name": "本地 iOS 小闭环",
       "hours_min": 45,
       "hours_max": 65,
-      "outcome": "列表、详情、报名、我的报名；状态单一且可测试。"
+      "outcome": "列表、详情、报名、我的报名；状态和规则可测试。"
     },
     {
       "id": "M2",
       "name": "iOS 数据与可靠性",
       "hours_min": 65,
       "hours_max": 90,
-      "outcome": "网络、缓存、取消、并发与内存故障能复现和修复。"
+      "outcome": "网络、缓存、取消、并发与内存故障定位。"
     },
     {
       "id": "M3",
-      "name": "UIKit 与最小 Go",
-      "hours_min": 60,
-      "hours_max": 90,
-      "outcome": "原生专项、服务端正确性与第一份面试作品。"
+      "name": "UIKit 与首轮实习作品",
+      "hours_min": 30,
+      "hours_max": 50,
+      "outcome": "原生专项、ObjC 阅读、演示和独立变更。"
     },
     {
       "id": "M4",
       "name": "JS / TS / React",
       "hours_min": 55,
       "hours_max": 80,
-      "outcome": "独立写表单与异步状态，区分 DOM 与 RN。"
+      "outcome": "表单、异步状态与 React 基础。"
     },
     {
       "id": "M5",
-      "name": "RN 与 iOS 集成",
-      "hours_min": 80,
-      "hours_max": 110,
-      "outcome": "报名模块嵌入 iOS，契约、原生能力、Release 可验证。"
-    },
-    {
-      "id": "M6",
-      "name": "Kotlin / Android 宿主",
-      "hours_min": 55,
-      "hours_max": 80,
-      "outcome": "生命周期与重建正确，同一个 RN 模块在 Android 运行。"
+      "name": "RN 与原生集成",
+      "hours_min": 95,
+      "hours_max": 120,
+      "outcome": "iOS 宿主集成、基本 Android RN 构建验证、Release 与回归。"
     },
     {
       "id": "M7",
-      "name": "性能、发布与求职",
-      "hours_min": 80,
-      "hours_max": 120,
-      "outcome": "可复现实验、发布演练、用户反馈与完整技术讲解。"
+      "name": "iOS / RN 工程深化",
+      "hours_min": 60,
+      "hours_max": 90,
+      "outcome": "性能、发布、用户反馈、故障与测量证据。"
+    }
+  ],
+  "optional_phases": [
+    {
+      "id": "M6",
+      "name": "Kotlin / Android 深化",
+      "hours_min": 55,
+      "hours_max": 80,
+      "outcome": "原生列表 / 详情、协程、重建与宿主深入。"
+    },
+    {
+      "id": "MG",
+      "name": "自写 Go 后端",
+      "hours_min": 35,
+      "hours_max": 50,
+      "outcome": "权限、迁移、事务与幂等；按需补充，不阻塞 RN。"
     }
   ]
 }
