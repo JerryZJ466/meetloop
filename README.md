@@ -1,55 +1,35 @@
 # MeetLoop
 
-活动组织与报名应用，用于深入学习 Swift / iOS 与 TypeScript / React Native，辅以 Kotlin / Android 和最小 Go 后端。
+活动组织与报名应用：Swift / iOS 和 TypeScript / React Native 为主，Kotlin / Android宿主为辅，配最小Go服务。
 
 ## 当前状态
 
-目前是计划与文档仓库，应用代码尚未实现。文档里的功能、测试和性能目标不是已完成成果。
+目前只有计划与文档；应用工程、业务代码、测试和部署尚未实现。 本次完成的是开工准备与计划审核，功能目标不代表已经掌握。
 
-## 从这里开始
+## 只从这份计划开始
 
-- [方向与深化安排](docs/plans/plan.html)
-- [学习时间与面试验收](docs/面试准备与时间评估.md)
-- [前四周任务](docs/START_HERE.md)
-- [当前计划 PDF](docs/plans/MeetLoop_方向评估与深化安排_v2.3_2026-10-28.pdf)
-- [原 16 页计划 PDF](docs/plans/MeetLoop_原计划_v2.2_2026-10-19.pdf)
+- **[当前主计划 v3.0](docs/plans/plan.md)**：阶段顺序、工时、开发任务、验收及学到什么。
+- [今天和前四周](docs/START_HERE.md)：第一项任务，无需先读完全部资料。
+- [进度账本](docs/PROGRESS.md)：各关卡当前均待开始，用代码和验证证据更新。
+- [岗位能力审核](docs/JOB_REQUIREMENTS_AUDIT.md)：官方样本、缺口与角色边界。
+- [准备工作审核](docs/PREPARATION_AUDIT.md) · [时间与面试评估](docs/面试准备与时间评估.md) · [公共基础](docs/COMMON_FOUNDATIONS.md)
+- [本机HTML版](docs/plans/plan.html) · [当前PDF快照](docs/plans/MeetLoop_开发与学习主计划_v3.0_2026-10-29.pdf)
 
-当前时间估算以“学习时间与面试验收”为准；PDF 保留完整阶段与课程细则。
+主要对应iOS与移动跨端。RN不能替代浏览器、DOM/CSS和Web工程；Web基础由独立AgentDesk控制台训练，进一步的全栈求职专项单独估时。
 
-## 产品范围
+## 时间与优先级
 
-首版：活动列表 → 活动详情 → 报名 / 取消 → 我的报名。先用本地数据建立独立开发能力，再接 API。
+首轮iOS实习准备默认每周MeetLoop 13h、AgentDesk 5h、公共基础3h；M3过关后默认8h/10h/3h。主线各450-650h，以实际关卡推进；两条并行含中断余量约14-21个月，不能把18个月当录用承诺。选修分支另计。
 
-- iOS：SwiftUI 起步，UIKit 专项，状态、并发、内存、网络与性能。
-- RN：共享报名模块，原生宿主契约、原生能力、生命周期与 Release 构建。
-- Android：原生列表 / 详情与 RN 宿主，不要求复制全部 iOS 页面。
-- Go：一个服务与数据库，保留鉴权、资源权限、事务、约束与幂等。
+## 独立迭代
 
-## 目录
+按需增加 `apps/ios`、`packages/registration-rn`、`apps/android`、`server`；不预建空壳工程。 本项目不依赖另一个项目的代码、文件或服务。远程仓库：[JerryZJ466/meetloop](https://github.com/JerryZJ466/meetloop)，public，默认分支main。
 
-```text
-docs/                 计划、课程入口与验收标准
-tools/                独立文档生成工具
-_local/               本机历史资料与校验记录，Git 已忽略
-```
+开始工作前拉取最新提交；每次完成可解释的小变化后检查diff、验证、commit和push。真实凭据、运行数据与本机历史资料保持Git忽略；依赖锁文件提交。
 
-实现时按需增加 `apps/ios`、`apps/android`、`packages/registration-rn`、`server` 和测试目录。现在不创建空壳工程。
+## 文档维护与历史
 
-## 文档更新
+`docs/plans/plan.source.json` 是内容源；`python tools/build_plan_html.py` 同时生成Markdown与HTML。PDF为同版本固定快照，修改源后须另外更新PDF；元数据在`docs/CURRENT_PLAN.json`。**旧PDF仅供历史参考，执行顺序与工时以当前主计划为准。**
 
-`docs/plans/plan.source.json` 是本仓库独立的计划源文件。运行 `python tools/build_plan_html.py` 更新 HTML。PDF 是固定快照，不会随 HTML 自动更新。
-
-## 仓库与迭代
-
-远程仓库：[GitHub 上的 meetloop](https://github.com/JerryZJ466/meetloop)。默认分支为 `main`，当前设为公开。此项目不依赖 AgentDesk 的代码、文件或服务。
-
-每次完成一个可解释、可验证的小任务后提交：
-
-```bash
-git status
-git add <本次修改的文件>
-git commit -m "描述本次完成的变化"
-git push
-```
-
-跨设备开始工作前先拉取最新提交；较大的实验使用独立分支。历史资料、凭据与运行数据按 `.gitignore` 保持在本地。计划、虚构样例和应用源码随仓库迭代。
+- [旧v2.2 PDF（历史）](docs/plans/MeetLoop_原计划_v2.2_2026-10-19.pdf)
+- [旧v2.3 PDF（历史）](docs/plans/MeetLoop_方向评估与深化安排_v2.3_2026-10-28.pdf)
